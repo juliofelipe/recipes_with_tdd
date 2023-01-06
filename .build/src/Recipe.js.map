@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/Recipe.ts"],
+  "sourcesContent": ["import Ingredient from \"./Ingredient\";\n\nexport default class Recipe {\n  ingredients: Ingredient[];\n\n  constructor() {\n    this.ingredients = []\n  }\n\n  addIngredient(ingredient: Ingredient) {\n    this.ingredients.push(ingredient);\n  }\n\n  getCalories() {\n    let calories = 0;\n    for (const ingredient of this.ingredients) {\n      calories += (ingredient.quantity * ingredient.calorie) / ingredient.weight;\n    }\n    return calories;\n  }\n\n  getTotal() {\n    return this.ingredients.reduce((pesoTotal, ingredient) => {\n      pesoTotal += ingredient.quantity;\n      return pesoTotal\n    }, 0)\n  }\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAEA,MAAO,OAAqB;AAAA,EAG1B,cAAc;AACZ,SAAK,cAAc,CAAC;AAAA,EACtB;AAAA,EAEA,cAAc,YAAwB;AACpC,SAAK,YAAY,KAAK,UAAU;AAAA,EAClC;AAAA,EAEA,cAAc;AACZ,QAAI,WAAW;AACf,eAAW,cAAc,KAAK,aAAa;AACzC,kBAAa,WAAW,WAAW,WAAW,UAAW,WAAW;AAAA,IACtE;AACA,WAAO;AAAA,EACT;AAAA,EAEA,WAAW;AACT,WAAO,KAAK,YAAY,OAAO,CAAC,WAAW,eAAe;AACxD,mBAAa,WAAW;AACxB,aAAO;AAAA,IACT,GAAG,CAAC;AAAA,EACN;AACF;",
+  "names": []
+}

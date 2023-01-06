@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/Ingredient.ts"],
+  "sourcesContent": ["export default class Ingredient {\n\n  constructor (readonly name: string, readonly weight: number, readonly calorie: number, readonly quantity: number) {\n    \n  }\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,MAAO,WAAyB;AAAA,EAE9B,YAAsB,MAAuB,QAAyB,SAA0B,UAAkB;AAA5F;AAAuB;AAAyB;AAA0B;AAAA,EAEhG;AACF;",
+  "names": []
+}
